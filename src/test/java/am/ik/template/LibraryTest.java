@@ -10,4 +10,5 @@ class LibraryTest {
 	void hello() {
 		assertThat(Library.hello()).isEqualTo("Hello World!");
 	}
+
 }
