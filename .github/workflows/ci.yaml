@@ -5,10 +5,18 @@ on:
     branches:
     - develop
     - main
+    paths:
+    - src/**
+    - pom.xml
+    - .github/workflows/ci.yml
   pull_request:
     branches:
     - develop
     - main
+    paths:
+    - src/**
+    - pom.xml
+    - .github/workflows/ci.yml
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -35,7 +43,7 @@ jobs:
       uses: actions/setup-java@v3
       with:
         java-version: '17'
-        distribution: 'temurin'
+        distribution: 'liberica'
         cache: maven
         gpg-private-key: ${{ steps.secrets.outputs.GPG_SECRING }}
         gpg-passphrase: ${{ steps.secrets.outputs.GPG_PASSPHRASE }}
