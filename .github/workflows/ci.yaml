@@ -8,7 +8,7 @@ on:
     paths:
     - src/**
     - pom.xml
-    - .github/workflows/ci.yml
+    - .github/workflows/ci.yaml
   pull_request:
     branches:
     - develop
@@ -16,7 +16,7 @@ on:
     paths:
     - src/**
     - pom.xml
-    - .github/workflows/ci.yml
+    - .github/workflows/ci.yaml
 jobs:
   build:
     runs-on: ubuntu-latest
