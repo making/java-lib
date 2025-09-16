@@ -58,7 +58,7 @@ jobs:
       run: ./mvnw -V --no-transfer-progress clean test
     - name: Generates Maven Settings
       if: github.event_name != 'pull_request'
-      uses: s4u/maven-settings-action@v3.1.0
+      uses: s4u/maven-settings-action@v4.0.0
       with:
         servers: |
           [{
